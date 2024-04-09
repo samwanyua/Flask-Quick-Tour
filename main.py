@@ -4,8 +4,8 @@ main = Blueprint('main', __name__)
 
 @main.route('/')
 def home():
-    return "Hello world"
+    return render_template('index.html')
 
 @main.route('/profile')
 def profile():
-    return "Your profile"
+    return render_template('profile.html')
